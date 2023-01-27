@@ -1,0 +1,41 @@
+body{
+    background-color:whitesmoke;
+}
+.logo img{
+    margin-top: 150px;
+    width: 400px;
+    border-radius: 300px;
+    border: solid 15px white;
+    margin-left: 200px;
+}
+.login{
+    margin-left: 250px;
+    margin-top: 150px;
+}
+.title{
+    font-size: 30px;
+}
+.a{
+    font-size: 20px;
+}
+.login input{
+    height: 40px;
+    width: 320px;
+}
+.button{
+    width:320px ;
+}
+.button button{
+    width: 115px;
+    height: 35px;
+}
+.button span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.register{
+    font-size:14px ;
+}
+::placeholder{
+    font-size: 14px;
+}

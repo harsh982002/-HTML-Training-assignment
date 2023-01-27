@@ -1,0 +1,102 @@
+body{
+    background-color: whitesmoke;
+}
+.logo img{
+    height: 36px;
+    margin-left: 10px;
+}
+.profile{
+    display: flex;
+}
+.logo span{
+    margin: 12px;
+}
+.photo{
+    height: 45px;
+    margin-right: 10px;
+}
+.dropdown{
+    height: 20px;
+}
+.notification{
+    height: 35px;
+    margin-right: 50px;
+}
+
+/* body content css*/
+.sidebar{
+    width: 190px;
+    height: 1063px;
+}
+.search{
+    margin-left: 40px;
+}
+.sidebar img{
+    height: 27px;
+    padding-bottom: 4px;
+}
+.sidebar div{
+    margin: 10px 30px;
+    width: 130px;
+    font-size: small;
+}
+.sidebar div p{
+    display: inline;
+    font-size: 15px;
+}
+
+.analysis
+{
+    margin-right: 20px;
+}
+
+.onename
+{
+    width: 1157px;
+    height: 49px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.c1
+{
+    margin-left: 50px;
+    font-size: larger;
+}
+
+.multiline
+{
+    width: 1157px;
+    height: 130px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+/* .name2
+{
+    width: 550px;
+    height: 49px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    
+}
+
+.username2
+{
+    width: 550px;
+    height: 49px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+.ps2
+{
+    width: 550px;
+    height: 49px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+} */
+
+
