@@ -1,47 +1,46 @@
 body{
     background-color: whitesmoke;
 }
-.body{
-    background-color: white;
+header{
+    width: 100%;
+}
+.menu{
+    cursor: pointer;
 }
 .logo img{
     height: 36px;
     margin-left: 10px;
 }
-.profile{
-    display: flex;
+.profile img{
+    margin-right: 20px;
 }
 .logo span{
     margin: 12px;
 }
 .photo{
     height: 45px;
-    margin-right: 10px;
 }
 .dropdown{
     height: 20px;
 }
 .notification{
     height: 35px;
-    margin-right: 50px;
-}
-
-/* body content css*/
-.sidebar{
-    width: 190px;
-    height: 1063px;
 }
 .search{
     margin-left: 40px;
 }
 .sidebar img{
-    height: 27px;
+    height: 25px;
     padding-bottom: 4px;
+}
+.sidebar{
+    width: 15%;
+    height: 1063px;
 }
 .sidebar div{
     margin: 10px 30px;
     width: 130px;
-    font-size: small;
+    height: 25px;
 }
 .sidebar div p{
     display: inline;
@@ -51,22 +50,26 @@ body{
     color: red;
     background-color: #fce8e8;
 }
+.chart{
+    width: 85%;
+}
 .chart h2{
     margin-left: 60px;
     font-size: 25px;
 }
 .stamp{
-    margin-left: 70px;
-    width: 1060px;
+    margin-left: 7%;
+    width: 85%;
 }
 .stamp-detail{
     background-color: white;
     display: flex;
+    margin-left: 1%;
     height: 55px;
 }
 .stamp-detail img{
-    padding:10px;
-    height: 55px;
+    padding:5%;
+    width: 33%;
 }
 .stamp-detail p{
     margin-block: 0%;
@@ -75,18 +78,22 @@ body{
     padding-top:6px;
 }
 .detail{
-    font-size: small;
+    font-size: 14px;
     padding-right: 10px;
    }
+.graphbody{
+    width: 85%;
+    margin-left: 7.5%;
+   }
 .chart-detail{
-    width: 680px;
+    width: 60%;
     background-color: white;
     height: 300px;
     margin-top: 30px;
-    margin-left:70px;
 }
 .chart-detail img{
-    width: 550px;
+    width: 85%;
+    height: 65%;
     margin: 20px 65px 65px ;
 }
 .label span{
@@ -108,7 +115,7 @@ body{
 }
 .piechart{
     background-color: white;
-    width: 350px;
+    width: 36%;
     height: 300px;
     margin-left: 30px;
     margin-top: 30px;
@@ -121,20 +128,51 @@ body{
 }
 .piechart img{
     margin:20px 75px 0px 75px;
-    height: 200px;
+    width: 55%;
+    height: 65%;
+}
+.countries{
+    width:90%;
+    margin-left: 10%;
+}
+.us{
+    background-color: #c6455d;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+}
+.Russia{
+    background-color: #ff7043;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+}
+.canada{
+    background-color: #6fc35d;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
+}
+.india{
+    background-color: #ffb300;
+    border-radius: 20px;
+    height: 18px;
+    width: 18px;
 }
 .countries p{
     font-size: small;
     position: relative;
-    bottom: 4px;
     left: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .invoice{
-    margin-left: 70px;
+    margin-left: 7%;
 }
 .invoice th{
     color: gray;
+}
+.viewall{
+    font-size: x-small;
 }
 .header span{
     padding: 10px;
@@ -148,4 +186,161 @@ body{
 .text-secondary{
     background-color: #ebeaea;
 }
-
+.table{
+    width: 100%;
+}
+@media screen and (max-width:1038px) and (min-width:641px) {
+    .sidebar {
+        width: 160px;
+        height: 1063px;
+    }
+    .sidebar div {
+        margin: 10px 20px;
+        width: 100px;
+    }
+    .sidebar img{
+        height: 20px;
+        padding-bottom: 0px;
+    }
+    .sidebar div p{
+        display: inline;
+        font-size: 13px;
+    }
+    .stamp-detail p{
+        font-size: x-small;
+    }
+    .chart h2 {
+        margin-left: 60px;
+        font-size: 20px;
+    }
+    .chart-detail{
+        width: 100%;
+    }
+    .chart-detail img{
+        width: 75%;
+    }
+    .piechart{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .invoice{
+        width: 90%;
+    }
+    th{
+        font-size: x-small;
+    }
+    td{
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width:640px){
+    .logo button{
+        height: 30px;
+        width: 35px;
+        margin-top: 6px;
+    }
+    .logo i{
+        width: 12px;
+        margin-top:-3px;
+    }
+    .logo img{
+        height: 31px;
+        margin-left: 5px;
+    }
+    .search{
+        margin-left: 10px;
+    }
+    .logo span{
+        margin-top: 15px;
+        margin-left: 3px;
+        font-size: xx-small;
+    }
+    .profile img{
+        margin-right: 10px;
+    }
+    .notification{
+        height: 29px;
+    }
+    .photo{
+        height: 35px;
+    }
+    .profile span{
+        font-size: xx-small;
+    }
+    .dropdown{
+        height: 15px;
+    }
+    .sidebar{
+        width: 0;
+        transition: 1s;
+    }
+    .sidebar img,.sidebar div{
+        width: 0px;
+        transition: 1s;
+    }
+    .sidebar div p{
+        font-size: 0px;
+        transition: 1s;
+    }
+    .chart{
+        margin-left: 15px;
+    }
+    .chart h2{
+        font-size: 20px;
+    }
+    .chart-detail img{
+        width: 85%;
+        height: 65%;
+        margin: 25px 40px 0px ;
+    }
+    .label span{
+        padding: 10px;
+        margin-left: 0px;
+        }
+    .label u{
+        display: inline;
+        margin: 5px;
+        font-size: x-small;
+    }
+    .label{
+        font-size: small;
+    }
+    .chart-detail{
+        width: 100%;
+    }
+    .chart-detail img{
+        width: 75%;
+    }
+    .piechart{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .piechart span{
+        font-size: small;
+    }
+    .countries p{
+        font-size: x-small;
+    }
+    .invoice{
+        width: 90%;
+    }
+    th{
+        font-size: xx-small;
+    }
+    td{
+        font-size: x-small;
+    }  
+    .header span{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:1038px) and (max-width:1308px) {
+    .stamp-detail p{
+        font-size: x-small;
+    }
+}
+@media screen and (min-width:575px) and (max-width:640px) {
+    .stamp-detail p{
+        font-size: x-small;
+    }
+}

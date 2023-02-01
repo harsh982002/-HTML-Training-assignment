@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/dashboard.css" type="text/css">
-   
 </head>
-    <header class="d-flex justify-content-between bg-white">
+<body>
+    <header class="d-flex justify-content-between bg-white navbar navbar-expand-sm navbar-light bg-light">
         <div class="logo d-flex">
-            <div>
-            <img class="pt-3" src="images/menu-bar.svg" alt="not load">
-            <img class="pt-3"src="images/logo.svg" alt="not load">
+            <div class="d-flex">
+                <button class="navbar-toggler" onclick="collapse()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                  </button>
+            <img class=" pt-3 menu" src="images/menu-bar.svg" alt="not load">
+            <img class=" pt-3"src="images/logo.svg" alt="not load">
             </div>
             <div class="search">
             <img class="search pt-3" src="images/search-icon.svg" alt="not load">
@@ -27,69 +30,75 @@
             <div>
             <img class="photo pt-2" src="images/profile.png" alt="not load">
            </div>
-            <span class="pt-3">Jhon Doe <img class="dropdown mr-4" src="images/downward-arrow.svg" alt="not load"></span>
+            <span class="pt-3">Jhon Doe <img class="dropdown" src="images/downward-arrow.svg" alt="not load"></span>
         </div>
     </header> 
     <div class="body d-flex"> 
         <!--sidebar html-->
     <div class="sidebar bg-white">
-        <div class="dashboard"><img src="images/dashboard-active.svg"/>  <p>Dashboard</p></div>
-        <div class="Analysis"><img src="images/graph-default.svg"/>  <p>Analysis</p></div>
-        <div class="Inbox"><img src="images/inbox-default.svg"/>  <p>Inbox</p></div>
-        <div class="History"><img src="images/clock-default.svg"/>  <p>History</p></div>
-        <div class="Users"><img src="images/user-default.svg"/>  <p>Users</p></div>
-        <div class="Maintenance"><img src="images/maintenance-default.svg"/>  <p>Maintenance</p></div>
-        <div class="Setting"><img src="images/setting-default.svg"/>  <p>Setting</p></div>
+        <div class="dashboard d-flex"><img src="images/dashboard-active.svg"/>  <p>Dashboard</p></div>
+        <div class="Analysis d-flex"><img src="images/graph-default.svg"/>  <p>Analysis</p></div>
+        <div class="Inbox  d-flex"><img src="images/inbox-default.svg"/>  <p>Inbox</p></div>
+        <div class="History  d-flex"><img src="images/clock-default.svg"/>  <p>History</p></div>
+        <div class="Users  d-flex"><img src="images/user-default.svg"/>  <p>Users</p></div>
+        <div class="Maintenance  d-flex"><img src="images/maintenance-default.svg"/>  <p>Maintenance</p></div>
+        <div class="Setting  d-flex"><img src="images/setting-default.svg"/>  <p>Setting</p></div>
     </div>
     <!--full chart-->
     <div class="chart">
       <h2 class="mt-5">Dashboard</h2>
       <!-- stamps -->
-      <div class="stamp d-flex justify-content-between">
-        <div class="stamp-detail">
+      <div class="stamp row">
+        <div class="stamp-detail col-md col-sm-3 col-12 mt-2">
             <img src="images/star.svg" alt="not load">
             <span><p class="number">23,456</p><p class="detail">New Products</p></span>
         </div>
-        <div class="stamp-detail">
+        <div class="stamp-detail col-md col-sm-3 col-12 mt-2">
             <img src="images/new-product.svg" alt="not load">
             <span><p class="number">2345</p><p class="detail">Added Products</p></span>
         </div>
-        <div class="stamp-detail">
+        <div class="stamp-detail col-md col-sm-3 col-12 mt-2">
             <img src="images/total-product.svg" alt="not-load">
             <span><p class="number">32,456</p><p class="detail">Total Products</p></span>
         </div>
-        <div class="stamp-detail">
+        <div class="stamp-detail col-md col-sm-3 col-12 mt-2">
             <img src="images/dollar-filled.svg" alt="not-load">
             <span><p class="number">5678</p><p class="detail">Today's Products</p></span>
         </div>
-        <div class="stamp-detail">
+        <div class="stamp-detail col-md col-sm-3 col-12 mt-2">
             <img src="images/money-bag.svg" alt="not-load">
             <span><p class="number">33,5342</p><p class="detail">Total Products</p></span>
         </div>
-      </div>
+    </div>
       <!--both data graph-->
-      <div class="d-flex">
-      <div class="chart-detail">
+      <div class="row graphbody">
+      <div class="chart-detail col-md-6 col-sm-12 col-12">
         <div class="label d-flex justify-content-between">
             <span>Sale</span>
             <span><u class="weekly">Weekly</u><u class="monthly">Monthly</u><u class="yearly-active">Yearly</u></span>
         </div>
         <img src="images/data-graph.png" alt="not load">
       </div>
-      <div class="piechart">
-       <span>Sales By Country</span>
+      <div class="piechart col-md-6 col-sm-12 col-12">
+        <div><span>Sales By Country</span></div>
        <img src="images/pie-chart.svg" alt="not load">
-       <div class="countries">
-        <div style=" display: flex; height: 25px;"><div style="display: flex; margin: 0px 0px 0px 30px;"><div style="background-color: red; height: 15px;width: 15px;border-radius: 100px;"></div> <p>United States Of America</p></div><div style="display: flex;margin: 0px 0px 0px 30px;"><div style="background-color:darkseagreen; height: 15px;width: 15px;border-radius: 100px;"></div> <p>Canada</p></div></div>
-        <div style=" display: flex;height: 20px;"><div style="display: flex; margin: 0px 0px 0px 30px;"><div style="background-color:#ec6a47; height: 15px;width: 15px;border-radius: 100px;"></div> <p>Russia</p></div><div style="display: flex;margin: 0px 0px 0px 138px;"><div style="background-color:#d7d756; height: 15px;width: 15px;border-radius: 100px;"></div> <p>India</p></div></div>   
-    </div>
+       <div class="countries d-flex">
+        <div class="c-1">
+            <div class="d-flex"><div class="us"></div><p>United States Of America</p></div>
+            <div class="d-flex"><div class="Russia"></div><p>Russia</p></div>
+        </div>
+        <div class="c-2" style="margin-left: 15px;">
+            <div class="d-flex"><div class="canada"></div><p>Canada</p></div>
+            <div class="d-flex"><div class="india"></div><p>India</p></div>
+        </div>
+ </div>
       </div>
       </div>
       <div class="invoice mt-5">
         <div class="table px-2 py-2 table-responsive">
             <div class="header d-flex justify-content-between bg-white">
-                <span style="font-weight: 700;color: rgb(69, 67, 67); font-size: 20px;">Invoices</span>
-                <span style="color: red; cursor: pointer; font-size: 10px;">View All</span>
+                <span style="font-weight: 700;color: rgb(69, 67, 67);">Invoices</span>
+                <span class="viewall" style="color: red; cursor: pointer;">View All</span>
             </div>
             <table class="table bg-white">
                 <tr>
@@ -189,4 +198,5 @@
     </div>
     </div>
 </body>
+<script src="js/custom.js"></script>
 </html>

@@ -1,102 +1,121 @@
-body{
-    background-color: whitesmoke;
+.content h2{
+    margin-left: 30px;
+    font-size: 30px;
 }
-.logo img{
-    height: 36px;
+.dashboard{
+    color:black;
+    background-color:white;
+}
+.Analysis{
+    color: red;
+    background-color: #fce8e8;
+}
+.form-group{position:relative;}
+.form-control{height: 40px;}
+
+label{position:absolute; left:10px; top:10px; transition:all 0.3s; color:#999; font-weight:normal;}
+.form-control:focus ~ label{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+label.active{left:5px; top:-10px; background:#fff; padding:0 5px;}
+
+.snackBar img{
+    width: 25px;
+    margin: 7px;
+    height: 25px;
+}
+.right{
     margin-left: 10px;
 }
-.profile{
+.form-control{
+    margin-top: 20px;
+}
+.headings{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.smallHeadings{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.formMain{
+    width: 90%;
     display: flex;
+    flex-direction: column;
+    margin-left: 79px;
+
 }
-.logo span{
-    margin: 12px;
+button{
+    width: 124px;
+    margin-right: 15px;
 }
-.photo{
-    height: 45px;
-    margin-right: 10px;
-}
-.dropdown{
-    height: 20px;
-}
-.notification{
-    height: 35px;
-    margin-right: 50px;
+@media screen and (max-width:576px) {
+    .content h2{
+        font-size: 20px;
+    }
+    .right{
+        margin-left: 0px;
+    }
+    .formMain{
+        margin-left: 50px;
+    }
+    .form{
+        font-size: 10px;
+    }
+    .headings,.smallHeadings{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    ::placeholder{
+        font-size: x-small;
+    }
+    option{
+        font-size: x-small;
+    }
+    button{
+        width: 100px;
+        margin-right: 5px;
+    }
 }
 
-/* body content css*/
-.sidebar{
-    width: 190px;
-    height: 1063px;
+.squareBox {
+    display: flex;
+    border: 1px solid;
+    height: 44px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 12px;
 }
-.search{
-    margin-left: 40px;
-}
-.sidebar img{
-    height: 27px;
-    padding-bottom: 4px;
-}
-.sidebar div{
-    margin: 10px 30px;
-    width: 130px;
-    font-size: small;
-}
-.sidebar div p{
-    display: inline;
+
+
+
+/* tab css */
+.tab1, .tab2, .tab3{
     font-size: 15px;
+    margin-right: 36px;
 }
-
-.analysis
-{
-    margin-right: 20px;
+.tab1{
+    color: red;
+    text-underline-offset: 17px;
+    text-decoration-thickness: 2px;
 }
-
-.onename
-{
-    width: 1157px;
-    height: 49px;
+.tab2,.tab3{
+    text-decoration-color:white ;
+}
+.singleLine{
     border: 1px solid #ADADAD;
-    border-radius: 5px;
-    margin-left: 50px;
+    margin-top: 13px;
+    margin-bottom: 27px;
 }
-.c1
-{
-    margin-left: 50px;
-    font-size: larger;
+.lorem{
+    margin-bottom: 75px;
 }
 
-.multiline
-{
-    width: 1157px;
-    height: 130px;
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-    margin-left: 50px;
-    text-align: justify;
-}
-
-/* .name2
-{
-    width: 550px;
-    height: 49px;
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-    
-}
-
-.username2
-{
-    width: 550px;
-    height: 49px;
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-}
-
-.ps2
-{
-    width: 550px;
-    height: 49px;
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-} */
-
-
+td {
+    padding: 10px;
+    background: linear-gradient(to right, red 33.33%, green 33.33%, green 66.67%, red 66.67%) no-repeat;
+    background-size: 100% 2px;
+    background-position: left bottom;
+  }
